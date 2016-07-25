@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin);
+
+body{
+    background:#3F88C5;
+    font-family: 'Libre Franklin', sans-serif;
+    color:#AABEDD;
+}
+
+p{
+    color:#AABEDD;
+}
+
+h1{
+    text-align: center;
+}
+
+code{
+    color:#c7254e;
+    background:#f9f2f4;
+}
