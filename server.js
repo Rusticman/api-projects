@@ -3,7 +3,7 @@ var time = require('./time.js');
 var app = express();
 var path  = require('path');
 
-
+app.set('port', (process.env.PORT || 5000));
 
 
 app.get('/', function (req, res) {
@@ -19,20 +19,19 @@ res.sendFile(file, function(error){
       console.log('Sent homepage.');
       }
 });
-      
-     
+
+
   });
 app.use(express.static('public'));
 
 app.get('/:timestamp',function(req,res){
 
-var timestamp = req.params.timestamp; 
+var timestamp = req.params.timestamp;
 
 res.send(time(timestamp));
   console.log('Timestamp sent.')
 })
 
-app.listen(8080, function () {
-  console.log('Listening on 8080');
+app.listen(app.get('port'), function () {
+  console.log('Listening on '+  app.get('port'));
 });
-
