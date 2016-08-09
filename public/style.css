@@ -4,6 +4,8 @@ body{
     background:#3F88C5;
     font-family: 'Libre Franklin', sans-serif;
     color:#AABEDD;
+    background-image: url(/img/clock.jpg);
+  background-size: cover;
 }
 
 p{
